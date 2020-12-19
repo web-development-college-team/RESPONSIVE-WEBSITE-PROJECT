@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="raza-css.css">
+
+    <title>Python-Syntax</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .first h1{
+            padding-top: 10px;
+            height: 40px;
+            padding-left: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .first{
+            padding-left: 30px;
+            padding-top: 30px;
+            font-size: 20px;
+            font-family: "Segoe UI",Arial,sans-serif;
+            letter-spacing: 3px;
+            color:black;
+        }
+        ul li{
+            display: inline;
+        }
+        ul li a{
+            text-decoration: none;
+        }
+        #left a{
+            float: left;
+            margin-top: 60px;
+            margin-left: 30px;
+            border:none;
+            padding: 10px;
+            background-color:rgb(73, 148, 247);
+            color: white;
+            border-radius: 5px;
+            padding-right: 14px;
+        }
+        #left a:hover{
+            background-color: white;
+            color:rgb(73, 131, 240) ;
+            border: 1px solid rgb(50, 135, 245);
+        }
+
+
+
+        #right a{
+            float: right;
+            margin-top: 60px;
+            margin-right:60px;
+            border:none;
+            padding: 10px;
+            background-color:rgb(73, 148, 247);
+            color: white;
+            border-radius: 5px;
+            padding-left: 14px;
+        }
+        #right a:hover{
+            background-color: white;
+            color:steelblue ;
+            border: 1px solid steelblue;
+        }
+        hr.hr-1{
+            border: 1px dotted steelblue;
+            width: 94%;
+            margin-left: 3%;
+            margin-top: 9%;
+        }
+                
+ .editor a{
+     text-decoration: none;
+     float: left;
+     margin-left: 5%;
+     margin-bottom: 5%;
+     color: white;
+     background-color: steelblue;
+     padding: 14px;
+     font-size: 20px;
+
+ }
+ .editor :hover{
+     background-color: white;
+     color: steelblue;
+     border: 2px solid steelblue;
+     
+ }
+.part-1{
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 20px;
+}
+.part-1 h2{
+    padding: 20px;
+}
+.part-1 p {
+    padding-bottom: 10px;
+    font-size:18px;
+    
+
+
+}
+.part-0{
+    background-color: rgb(250, 178, 244);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="first">
+        <h1>Python Variables</h1>
+    <ul>
+        <li id="left"><a href="comment.html">< Previous</a></li>
+        <li id="right"><a href="data-type.html">Next ></a></li>
+    </ul>
+
+    <br>
+    <br>
+    </div>
+<div class="part-1">
+    <hr class=hr-1>
+<h2>Creating Variables</h2>
+<p> Variables are containers for storing data values.
+</p>
+<p>Unlike other programming languages, Python has no command for declaring a variable.
+</p>
+<p>A variable is created the moment you first assign a value to it.
+</p>
+<h3>Example</h3>
+<pre>
+    <code class="language-python">
+        x = 5
+y = "Raza"
+print(x)
+print(y)
+    </code>
+</pre>
+<br>
+<p>Variables do not need to be declared with any particular type, and can even change type after they have been set.
+</p>
+<br>
+<h3>Example</h3>
+<pre>
+    <code class="language-python">
+        x = 4 # x is of type int
+x = "Shaikh" # x is now of type str
+print(x)
+    </code>
+</pre>
+<div class="part-0">
+    <p>You will learn more about data types, such as str (strings) and int (integers) in the next chapter.</p>
+</div>
+<h2>Variable Names</h2>
+<p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). Rules for Python variables:</p>
+<ul>
+    <li>- A variable name must start with a letter or the underscore character
+    </li><br>
+    <li>- A variable name cannot start with a number
+    </li><br>
+    <li>- A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+    </li><br>
+    <li>- Variable names are case-sensitive (age, Age and AGE are three different variables)
+    </li>
+
+<h3>Example</h3>
+<pre>
+    <code class="language-python">
+        #Legal variable names:
+myvar = "raza"
+my_var = "raza"
+_my_var = "raza"
+myVar = "raza"
+MYVAR = "raza"
+myvar2 = "raza"
+
+#Illegal variable names:
+2myvar = "raza"
+my-var = "raza"
+my var = "raza"
+    </code>
+</pre>
+</ul>
+<div class="part-0">
+    <p>Remember that variable names are case-sensitive
+    </p>
+</div>
+</div>
+
+
+
+<div class="editor">
+    <a href="https://www.programiz.com/python-programming/online-compiler/">Try It Yourself</a>
+
+</div>
+
+    <script src="raza-js.js"></script>
+</body>
+</html>
