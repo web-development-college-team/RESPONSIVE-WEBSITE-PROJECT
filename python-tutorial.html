@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="raza-css.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <title>python-example</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            font-family: 'Poppins', Sans-Serif;
+        }
+
+        .body {
+            justify-content: content;
+            align-items: center;
+
+        }
+
+
+        .headpart {
+            background-color: #819ef3;
+            height: 80px;
+            width: 80%;
+            position: fixed;
+            margin-left: 10%;
+            box-shadow: 0 5px 6px #c4c4c4;
+        }
+
+
+
+        .logo {
+            height: 190px;
+            padding: 0 15px;
+            line-height: 80px;
+            margin-top: -45px;
+
+
+        }
+
+
+        .headpart:after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        .headpart ul {
+            padding-top: 20px;
+            float: right;
+            list-style: none;
+            margin-right: 140px;
+            position: relative;
+        }
+
+        .headpart ul li {
+            float: left;
+            background: rgb(252, 31, 31);
+            display: inline-block;
+            margin: 30px 7px;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+
+
+        }
+
+        .headpart ul li a {
+            color: white;
+            text-decoration: none;
+            line-height: 40px;
+            font-size: 16px;
+            padding: 8px 15px;
+            font-size: 14px;
+
+
+        }
+
+        .headpart ul li a:hover {
+            color: white;
+            background-color: none;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+            box-shadow: 0 0 7px white;
+        }
+
+        .headpart ul ul li a:hover {
+            color: red;
+            box-shadow: none;
+            border: none;
+
+
+        }
+
+        .headpart ul li:hover>ul {
+            opacity: 1;
+            visibility: visible;
+
+        }
+
+        .headpart ul ul {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: top 0.3s;
+        }
+
+        .headpart ul ul li {
+
+            position: relative;
+            margin: 0px;
+            width: 110px;
+            float: none;
+            display: list-item;
+            text-align: center;
+            background-color: rgb(224, 92, 92);
+
+
+
+
+        }
+
+        .headpart ul ul ul li {
+            position: relative;
+            top: -60px;
+            left: 111px;
+
+
+        }
+
+        #ID {
+
+            border-radius: 1px;
+            background-color: rgb(204, 201, 201);
+            border-bottom: 0.5px solid white;
+        }
+
+
+
+
+
+        .follow {
+            margin-top: 2.50%;
+            width: 80%;
+            margin-left: 10%;
+            background-color: azure;
+        }
+
+        h5 {
+            font-family: Sans-Serif;
+            font-weight: normal;
+            font-size: 15px;
+            letter-spacing: 4px;
+            padding: 20px 0 40px;
+            color: black;
+            text-align: center;
+
+
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .social-media a {
+            display: flex;
+            height: 40px;
+            width: 40px;
+            margin: 0 10px;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+
+        }
+
+        a i {
+            transform: scale(2);
+        }
+
+        a .fa-facebook {
+            color: #3b5998;
+        }
+
+        a .fa-twitter {
+            color: #70c4e6;
+        }
+
+        a .fa-instagram {
+            color: #f14843;
+        }
+
+        a .fa-whatsapp {
+            color: #4fce5d;
+        }
+
+        a .fa-youtube {
+            color: #f00;
+        }
+
+        a i:hover {
+            transform: scale(1.5);
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .question {
+            width: 80%;
+            margin-left: 10%;
+            background-color: white;
+            height: 99vh;
+        }
+
+        .part-1 {
+            padding-top: 30%;
+            width: 60%;
+            margin-left: 35%;
+        }
+
+        .frame {
+            padding-top: 6.50%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <div class="headpart">
+            <img src="loho3.png" class="logo">
+
+
+            <ul>
+                <li id="left"><a href="index.html">Home</a></li>
+
+                <li>
+
+                    <a href="#">Tutorials</a>
+                    <ul>
+                        <li id="ID"><a href="workinprogress.html">Java</a></li>
+                        <li id="ID"><a href="workinprogress.html">C++</a></li>
+                        <li id="ID"><a href="workinprogress.html">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Examples</a>
+                    <ul>
+                        <li id="ID"><a href="python-example.html">Python</a></li>
+
+                        <li id="ID"><a href="workinprogress.html">Java</a></li>
+                        <li id="ID"><a href="workinprogress.html">C++</a></li>
+                        <li id="ID"><a href="workinprogress.html">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li>
+
+                    <a href="#">Quiz</a>
+                    <ul>
+                        <li id="ID"><a href="#">Python</a>
+
+                            <ul>
+                                <li id="ID"><a href="rules.html">Beginner</a></li>
+                                <li id="ID"><a href="workinprogress.html">Intermediate</a></li>
+                                <li id="ID"><a href="workinprogress.html">Expert</a></li>
+                            </ul>
+                        </li>
+
+                        <li id="ID"><a href="#">Java</a>
+
+                            <ul>
+                                <li id="ID"><a href="workinprogress.html">Beginner</a></li>
+                                <li id="ID"><a href="workinprogress.html">Intermediate</a></li>
+                                <li id="ID"><a href="workinprogress.html">Expert</a></li>
+                            </ul>
+                        </li>
+                        <li id="ID"><a href="#">C++</a>
+                            <ul>
+                                <li id="ID"><a href="workinprogress.html">Beginner</a></li>
+                                <li id="ID"><a href="workinprogress.html">Intermediate</a></li>
+                                <li id="ID"><a href="workinprogress.html">Expert</a></li>
+                            </ul>
+                        </li>
+                        <li id="ID"><a href="#">JavaScript</a>
+                            <ul>
+                                <li id="ID"><a href="workinprogress.html">Beginner</a></li>
+                                <li id="ID"><a href="workinprogress.html">Intermediate</a></li>
+                                <li id="ID"><a href="workinprogress.html">Expert</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+    <div class="question">
+
+        <div class="frame">
+            <iframe src="python.html" width="211px" height="700px">
+            </iframe>
+            <iframe src="choice.html" width="991px" height="700px" name="image"></iframe>
+
+        </div>
+
+        <!--
+        <div class="part-1">
+            <pre>
+        
+                <code class="language-python">
+                    print("Twinkle, twinkle, little star, \n\tHow I wonder what you are! \n\t\tUp above the world so high, \n\t\tLike a diamond in the sky. \nTwinkle, twinkle, little star, \n\tHow I wonder what you are!")
+                    print("HELLO RAZA");
+                </code>
+            </pre>
+
+        </div>
+          -->
+
+    </div>
+
+
+    <div class="follow">
+        <h5>FOLLOW US ON SOCIAL</h5>
+        <div class="social-media">
+            <a href="workinprogress.html"><i class="fab fa-facebook"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-twitter"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-instagram"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-youtube"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <br>
+        <br>
+        <hr>
+    </div>
+
+    <script src="raza-js.js"></script>
+
+</body>
+
+</html>
