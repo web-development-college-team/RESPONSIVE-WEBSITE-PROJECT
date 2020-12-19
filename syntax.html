@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="raza-css.css">
+
+    <title>Python-Syntax</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .first h1{
+            padding-top: 10px;
+            height: 40px;
+            padding-left: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .first{
+            padding-left: 30px;
+            padding-top: 30px;
+            font-size: 20px;
+            font-family: "Segoe UI",Arial,sans-serif;
+            letter-spacing: 3px;
+            color:black;
+        }
+        ul li{
+            display: inline;
+        }
+        ul li a{
+            text-decoration: none;
+        }
+        #left a{
+            float: left;
+            margin-top: 60px;
+            margin-left: 30px;
+            border:none;
+            padding: 10px;
+            background-color:rgb(73, 148, 247);
+            color: white;
+            border-radius: 5px;
+            padding-right: 14px;
+        }
+        #left a:hover{
+            background-color: white;
+            color:rgb(73, 131, 240) ;
+            border: 1px solid rgb(50, 135, 245);
+        }
+
+
+
+        #right a{
+            float: right;
+            margin-top: 60px;
+            margin-right:60px;
+            border:none;
+            padding: 10px;
+            background-color:rgb(73, 148, 247);
+            color: white;
+            border-radius: 5px;
+            padding-left: 14px;
+        }
+        #right a:hover{
+            background-color: white;
+            color:steelblue ;
+            border: 1px solid steelblue;
+        }
+        hr.hr-1{
+            border: 1px dotted steelblue;
+            width: 94%;
+            margin-left: 3%;
+            margin-bottom: 3%;
+            margin-top: 8%;
+
+
+        }
+        .part-1{
+            width: 90%;
+            margin-left: 5%;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+        .part-1 p{
+            padding-top: 10px;
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+        .part-1 h2 h3{
+            padding-top: 10px;
+        }
+        
+ .editor a{
+     text-decoration: none;
+     float: left;
+     margin-left: 5%;
+     margin-bottom: 5%;
+     color: white;
+     background-color: steelblue;
+     padding: 14px;
+     font-size: 20px;
+
+ }
+ .editor :hover{
+     background-color: white;
+     color: steelblue;
+     border: 2px solid steelblue;
+     
+ }
+    </style>
+</head>
+<body>
+    
+    <div class="first">
+        <h1>Python Syntax</h1>
+    <ul>
+        <li id="left"><a href="intro.html">< Previous</a></li>
+        <li id="right"><a href="comment.html">Next ></a></li>
+    </ul>
+
+    <br>
+    <br>
+
+    </div>
+    <div class="part-1">
+        <hr class="hr-1">
+        <h2>Execute Python Syntax
+        </h2>
+        <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
+        <pre>
+            <code class="language-python">
+                >>> print("Hello, World!")
+
+                Hello, World!
+            </code>
+        </pre>
+        <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:
+        </p>
+        <pre>
+            <code class="language-python">
+                C:\Users\Your Name>python myfile.py
+
+            </code>
+        </pre>
+        <h2>Python Indentation</h2>
+        <p>
+            Indentation refers to the spaces at the beginning of a code line.<br>
+
+Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important.<br>
+
+Python uses indentation to indicate a block of code.
+        </p>
+        <h3>Example
+        </h3>
+        <pre>
+            <code class="language-python">
+                if 5 > 2:
+                    print("Five is greater than two!")
+            </code>
+        </pre>
+        <p>
+            Python will give you an error if you skip the indentation:
+        </p>
+        <h3>Exmple</h3>
+        <p>Syntax Error:
+        </p>
+        <pre>
+            <code class="language-python">
+                if 5 > 2:
+print("Five is greater than two!")
+
+            </code>
+        </pre>
+        <p>The number of spaces is up to you as a programmer, but it has to be at least one.
+        </p>
+        <h3>Example</h3>
+        <pre>
+            <code class="language-python">
+                if 5 > 2:
+                  print("Five is greater than two!") 
+                if 5 > 2:
+                     print("Five is greater than two!") 
+            </code>
+        </pre>
+        <p>You have to use the same number of spaces in the same block of code, otherwise Python will give you an error:
+        </p>
+        <h3>
+            Example
+        </h3>
+        <p>Syntax Error:</p>
+        <pre>
+            <code class="language-python">
+                if 5 > 2:
+                print("Five is greater than two!")
+                       print("Five is greater than two!")
+               
+            </code>
+        </pre>
+    </div>
+    <div class="editor">
+        <a href="https://www.programiz.com/python-programming/online-compiler/">Try It Yourself</a>
+    
+    </div>
+
+    <script src="raza-js.js"></script>
+</body>
+</html>
