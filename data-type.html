@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="raza-css.css">
+
+    <title>Python-Syntax</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .first h1{
+            padding-top: 10px;
+            height: 40px;
+            padding-left: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .first{
+            padding-left: 30px;
+            padding-top: 30px;
+            font-size: 20px;
+            font-family: "Segoe UI",Arial,sans-serif;
+            letter-spacing: 3px;
+            color:black;
+        }
+        ul li{
+            display: inline;
+        }
+        ul li a{
+            text-decoration: none;
+        }
+        #left a{
+            float: left;
+            margin-top: 60px;
+            margin-left: 30px;
+            border:none;
+            padding: 10px;
+            background-color:rgb(73, 148, 247);
+            color: white;
+            border-radius: 5px;
+            padding-right: 14px;
+        }
+        #left a:hover{
+            background-color: white;
+            color:rgb(73, 131, 240) ;
+            border: 1px solid rgb(50, 135, 245);
+        }
+
+
+
+        #right a{
+            float: right;
+            margin-top: 60px;
+            margin-right:60px;
+            border:none;
+            padding: 10px;
+            background-color:rgb(73, 148, 247);
+            color: white;
+            border-radius: 5px;
+            padding-left: 14px;
+        }
+        #right a:hover{
+            background-color: white;
+            color:steelblue ;
+            border: 1px solid steelblue;
+        }
+        hr.hr-1{
+            border: 1px dotted steelblue;
+            width: 94%;
+            margin-left: 3%;
+            margin-top: 9%;
+        }
+                
+ .editor a{
+     text-decoration: none;
+     float: left;
+     margin-left: 5%;
+     margin-bottom: 5%;
+     color: white;
+     background-color: steelblue;
+     padding: 14px;
+     font-size: 20px;
+
+ }
+ .editor :hover{
+     background-color: white;
+     color: steelblue;
+     border: 2px solid steelblue;
+     
+ }
+ table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.part-1{
+    width: 90%;
+    margin-left: 5%;
+}
+.part-1 h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.part-1 p{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.part-1 h3{
+    padding-bottom: 10px;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="first">
+        <h1>Python Data Type</h1>
+    <ul>
+        <li id="left"><a href="variables.html">< Previous</a></li>
+        <li id="right"><a href="number.html">Next ></a></li>
+    </ul>
+
+    <br>
+    <br>
+    </div>
+<div class="part-1">
+    <hr class=hr-1>
+<h2>
+    Built-in Data Types
+</h2>
+<p>  In programming, data type is an important concept.</p><br>
+
+<p>Variables can store data of different types, and different types can do different things.
+</p><br>
+<p>Python has the following data types built-in by default, in these categories:
+</p>
+<table>
+
+    <tr>
+      <td>Text Type:	</td>
+      <td>str</td>
+    </tr>
+    <tr>
+      <td>Numeric Types:	</td>
+      <td>int, float, complex</td>
+    </tr>
+    <tr>
+      <td>Sequence Types:	</td>
+      <td>list, tuple, range
+    </td>
+    </tr>
+    <tr>
+      <td>Mapping Type:	</td>
+      <td>dict
+    </td>
+    </tr>
+    <tr>
+      <td>Set Types:	</td>
+      <td>set, frozenset
+    </td>
+    </tr>
+    <tr>
+      <td>Boolean Type:	</td>
+      <td>bool
+    </td>
+    </tr>
+    <tr>
+        <td>Binary Types:	</td>
+        <td>bytes, bytearray, memoryview
+        </td>
+      </tr>
+  </table>
+  <h2>Getting the Data Type
+</h2>
+<p>You can get the data type of any object by using the type() function:
+</p>
+<h3>Example</h3>
+<p>Print the data type of the variable x:
+</p>
+<pre>
+    <code class="language-python">
+        x = 5
+print(type(x))
+    </code>
+</pre>
+
+
+</div>
+
+
+
+<div class="editor">
+    <a href="https://www.programiz.com/python-programming/online-compiler/">Try It Yourself</a>
+
+</div>
+
+    <script src="raza-js.js"></script>
+</body>
+</html>
