@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="raza-1-css.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Python-Example</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            font-family: 'Poppins', Sans-Serif;
+        }
+
+        .body {
+            justify-content: content;
+            align-items: center;
+
+        }
+
+
+        .headpart {
+            background-color: #819ef3;
+            height: 80px;
+            width: 80%;
+            position: absolute;
+            margin-left: 10%;
+            box-shadow: 0 5px 6px #c4c4c4;
+        }
+
+
+
+        .logo {
+            height: 190px;
+            padding: 0 15px;
+            line-height: 80px;
+            margin-top: -45px;
+
+
+        }
+
+
+        .headpart:after {
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        .headpart ul {
+            padding-top: 20px;
+            float: right;
+            list-style: none;
+            margin-right: 140px;
+            position: relative;
+        }
+
+        .headpart ul li {
+            float: left;
+            background: rgb(252, 31, 31);
+            display: inline-block;
+            margin: 30px 7px;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+
+
+        }
+
+        .headpart ul li a {
+            color: white;
+            text-decoration: none;
+            line-height: 40px;
+            font-size: 16px;
+            padding: 8px 15px;
+            font-size: 14px;
+
+
+        }
+
+        .headpart ul li a:hover {
+            color: white;
+            background-color: none;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+            box-shadow: 0 0 7px white;
+        }
+
+        .headpart ul ul li a:hover {
+            color: red;
+            box-shadow: none;
+            border: none;
+
+
+        }
+
+        .headpart ul li:hover>ul {
+            opacity: 1;
+            visibility: visible;
+
+        }
+
+        .headpart ul ul {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            transition: top 0.3s;
+        }
+
+        .headpart ul ul li {
+
+            position: relative;
+            margin: 0px;
+            width: 110px;
+            float: none;
+            display: list-item;
+            text-align: center;
+            background-color: rgb(224, 92, 92);
+
+
+
+
+        }
+
+        .headpart ul ul ul li {
+            position: relative;
+            top: -60px;
+            left: 111px;
+
+
+        }
+
+        #ID {
+
+            border-radius: 1px;
+            background-color: rgb(204, 201, 201);
+            border-bottom: 0.5px solid white;
+        }
+
+
+
+
+
+        .follow {
+            margin-top: 0%;
+            width: 80%;
+            margin-left: 10%;
+            background-color: azure;
+        }
+
+        h5 {
+            font-family: Sans-Serif;
+            font-weight: normal;
+            font-size: 15px;
+            letter-spacing: 4px;
+            padding: 20px 0 40px;
+            color: black;
+            text-align: center;
+            padding-top: 10%;
+
+
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        .social-media a {
+            display: flex;
+            height: 40px;
+            width: 40px;
+            margin: 0 10px;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+
+        }
+
+        a i {
+            transform: scale(2);
+        }
+
+        a .fa-facebook {
+            color: #3b5998;
+        }
+
+        a .fa-twitter {
+            color: #70c4e6;
+        }
+
+        a .fa-instagram {
+            color: #f14843;
+        }
+
+        a .fa-whatsapp {
+            color: #4fce5d;
+        }
+
+        a .fa-youtube {
+            color: #f00;
+        }
+
+        a i:hover {
+            transform: scale(1.5);
+        }
+
+        .part-1 {
+            width: 80%;
+            margin-left: 10%;
+            padding-top: 5%;
+            background-color: white;
+
+
+        }
+
+        .Q-1 {
+            padding-top: 3%;
+            width: 90%;
+            margin-left: 5%;
+            font-size: 18px;
+
+        }
+
+        #myDIV {
+            width: 100%;
+            text-align: center;
+            background-color: rgb(224, 240, 245);
+            margin-top: 10px;
+        }
+
+        .part-1 h1 {
+            padding-top: 30px;
+            padding-left: 55px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <div class="headpart">
+            <img src="loho3.png" class="logo">
+
+
+            <ul>
+                <li>
+
+                    <a href="#">Tutorials</a>
+                    <ul>
+                        <li id="ID"><a href="python-tutorial.html">Python</a></li>
+
+                        <li id="ID"><a href="workinprogress.html">Java</a></li>
+                        <li id="ID"><a href="workinprogress.html">C++</a></li>
+                        <li id="ID"><a href="workinprogress.html">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Examples</a>
+                    <ul>
+
+                        <li id="ID"><a href="workinprogress.html">Java</a></li>
+                        <li id="ID"><a href="workinprogress.html">C++</a></li>
+                        <li id="ID"><a href="workinprogress.html">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li>
+
+                    <a href="#">Quiz</a>
+                    <ul>
+                        <li id="ID"><a href="#">Python</a>
+
+                            <ul>
+                                <li id="ID"><a href="rules.html">Beginner</a></li>
+                                <li id="ID"><a href="workinprogress.html">Intermediate</a></li>
+                                <li id="ID"><a href="workinprogress.html">Expert</a></li>
+                            </ul>
+                        </li>
+
+                        <li id="ID"><a href="#">Java</a>
+
+                            <ul>
+                                <li id="ID"><a href="workinprogress.html">Beginner</a></li>
+                                <li id="ID"><a href="workinprogress.html">Intermediate</a></li>
+                                <li id="ID"><a href="workinprogress.html">Expert</a></li>
+                            </ul>
+                        </li>
+                        <li id="ID"><a href="#">C++</a>
+                            <ul>
+                                <li id="ID"><a href="workinprogress.html">Beginner</a></li>
+                                <li id="ID"><a href="workinprogress.html">Intermediate</a></li>
+                                <li id="ID"><a href="workinprogress.html">Expert</a></li>
+                            </ul>
+                        </li>
+                        <li id="ID"><a href="#">JavaScript</a>
+                            <ul>
+                                <li id="ID"><a href="workinprogress.html">Beginner</a></li>
+                                <li id="ID"><a href="workinprogress.html">Intermediate</a></li>
+                                <li id="ID"><a href="workinprogress.html">Expert</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <div class="part-1">
+        <h1>Python Practice Program.</h1>
+        <div class="Q-1">
+            <p><strong>1.</strong> Write a Python program to display the current date and time.
+            </p>
+            <div id="myDIV">
+                <pre>
+                <code class="language-python">
+                    import datetime
+now = datetime.datetime.now()
+print ("Current date and time : ")
+print (now.strftime("%Y-%m-%d %H:%M:%S"))
+
+                </code>
+            </pre>
+            </div>
+
+
+
+
+        </div>
+
+
+
+        <div class="Q-1">
+            <p><strong>2.</strong> Take value of lenght and breadth of a rectangle from user and check if it is square
+                or not .
+            </p>
+            <div id="myDIV">
+                <pre>
+                <code class="language-python">
+                    a=int(input("ENTER THE LENGTH : "))
+b=int(input("ENTER THE BREADTH : "))
+if a==b:
+print("IT IS A SQUARE ")
+else:
+print("IT IS NOT A SQUARE")
+                </code>
+            </pre>
+            </div>
+
+
+        </div>
+        <div class="Q-1">
+            <p><strong>3.</strong> Take two int values from user and print greatest among them.
+            </p>
+            <div class="myDIV">
+                <pre>
+            <code class="language-python">
+                a=int(input("ENTER TNE FIRST NUMBER"))
+                b=int(input("ENTER TNE SECOND NUMBER"))
+                if a>b:
+                    print("FIRST NUMBER IS GREATER")
+                elif a < b:
+                    print("SECOND NUMBER IS GREATER ")
+                else:
+                    print("BOTH NUMBER ARE EQUAL")
+            </code>
+        </pre>
+            </div>
+        </div>
+        
+        <div class="Q-1">
+            <p><strong>4.</strong> Write a Python program which accepts the user's first and last name and print them in reverse order with a space between them. 
+            </p>
+            <div class="myDIV">
+                <pre>
+            <code class="language-python">
+                fname = input("Input your First Name : ")
+lname = input("Input your Last Name : ")
+print ("Hello  " + lname + " " + fname)
+
+            </code>
+        </pre>
+            </div>
+        </div>
+
+
+        
+        <div class="Q-1">
+            <p><strong>5.</strong>Write a Python program to calculate number of days between two dates. 
+            </p>
+            <div class="myDIV">
+                <pre>
+            <code class="language-python">
+                from datetime import date
+f_date = date(2014, 7, 2)
+l_date = date(2014, 7, 11)
+delta = l_date - f_date
+print(delta.days)
+            </code>
+        </pre>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="follow">
+        <h5>FOLLOW US ON SOCIAL</h5>
+        <div class="social-media">
+            <a href="workinprogress.html"><i class="fab fa-facebook"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-twitter"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-instagram"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-youtube"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <script src="raza-1-js.js"></script>
+
+</body>
+
+</html>
