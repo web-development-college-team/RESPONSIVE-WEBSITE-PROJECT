@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <title> Quiz-Rules</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+
+nav
+{
+ background-color:  #819ef3;
+ height: 80px;
+ width: 80%;
+ position: fixed;
+ box-shadow: 0 5px  6px #efefef;
+ margin-left: 10%;
+}
+
+
+.logo{
+    height:190px;
+    padding: 0 15px;
+    line-height: 80px;
+    margin-top: -45px;
+
+
+}
+
+
+
+    nav:after{
+        content:'';
+        clear:both;
+        display: table;
+    }
+    nav ul{
+        padding-top: 20px;
+        float: right;
+        list-style: none;
+        margin-right:140px;
+        position: relative;
+    }
+    nav ul li {
+        float: left;
+        background: red ;
+        display: inline-block;
+        margin: 30px 7px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        line-height: 40px;
+        font-size: 17px;
+        padding: 8px 15px;
+        
+    }
+    nav ul li a:hover{
+        color:white;
+        background-color: none;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        box-shadow: 0 0 7px white ;
+    }
+    nav ul ul li a:hover{
+        color:red;
+        box-shadow: none;
+        border:none;
+        
+
+    }
+    nav ul li:hover > ul{
+        opacity: 1;
+        visibility: visible;
+
+    }
+    nav ul ul {
+        position: absolute;
+        opacity:0;
+        visibility: hidden;
+        transition: top 0.3s;
+    }
+    nav ul ul li{
+
+        position: relative;
+        margin: 0px;
+        width: 110px;
+        float: none;
+        display: list-item;
+        text-align: center;
+        background-color:rgb(224, 92, 92);
+
+
+
+        
+    }
+    nav ul ul ul  li{
+        position: relative;
+        top: -60px;
+        left:111px;
+        
+        
+    }
+    .ID{
+        
+        border-radius:1px;
+        background-color:  #d9d9d9;
+        border-bottom: 0.5px solid white;
+    }
+
+        .control{
+            text-align: justify;
+            width: 80%;
+            margin-left: 10%;
+            height: 100%;
+            background-color:white;
+            padding-top: 10%;
+
+        }
+        .rule{
+            height: 60%;
+            margin-bottom: 10%;
+            background-color: whitesmoke;
+            width: 60%;
+            margin-left: 20%;
+        }
+        .rule h4{
+            padding: 10px;
+            border-bottom: 1px solid white;
+            background-color:salmon;
+            width:97.50%;
+            color:whitesmoke;
+            font-family: Sans-Serif;
+            font-weight:600;
+            font-size: 15px;
+            letter-spacing: 4px;
+        }
+        .rule p{
+            padding: 10px;
+            background-color:whitesmoke;
+            width: 97.40%;
+        
+
+        }
+
+        
+       
+
+      
+        #accept a{
+            text-decoration: none;
+            list-style: none;
+            margin-right: 3%;
+            padding: 8px;
+            background-color: steelblue;
+            width: 10%;
+            text-align: center;
+            color:white;
+            float: right;
+            margin-top: -35px;
+            
+
+
+
+        }
+        #accept a:hover{
+            border: 1px solid black;
+            background-color:white;
+            color:black;
+        }
+
+
+
+  .follow{
+    width: 80%;
+    margin-left: 10%;
+}
+
+h5{
+    font-family: Sans-Serif;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 4px;
+    padding: 20px 0 40px;
+    color:black;
+    text-align:center;
+    
+    
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+.social-media a{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+    align-items:center;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+
+a i{
+    transform: scale(2);
+}
+a .fa-facebook{
+    color:#3b5998;
+}
+
+a .fa-twitter{
+    color:#70c4e6;
+}
+
+a .fa-instagram{
+    color:#f14843;
+}
+
+a .fa-whatsapp{
+    color:#4fce5d;
+}
+
+a .fa-youtube{
+    color:#f00;
+}
+
+a i:hover{
+    transform: scale(1.5);
+}
+    </style>
+</head>
+<body>
+
+    <nav>
+     
+        <img src="loho3.png" class="logo">
+
+    
+        <ul>
+              <li>
+
+                  <a href="#">Tutorials</a>
+                 <ul>
+                  <li class="ID"><a href="workinprogress.html">Python</a></li>
+                  <li class="ID"><a href="workinprogress.html">Java</a></li>
+                  <li class="ID"><a href="workinprogress.html">C++</a></li> 
+                  <li class="ID"><a href="workinprogress.html">JavaScript</a></li>
+                 </ul>
+              </li>
+              <li><a href="index.html">Back</a></li>
+
+              <li><a href="#">Examples</a>
+                  <ul>
+                  <li class="ID"><a href="workinprogress.html">Python</a></li>
+                  <li class="ID"><a href="workinprogress.html">Java</a></li>
+                  <li class="ID"><a href="workinprogress.html">C++</a></li>
+                  <li class="ID"><a href="workinprogress.html">JavaScript</a></li>
+                 </ul>
+              </li>
+          </ul>
+      </nav>
+
+   <div class="control">
+
+    <div class="rule">
+       <h4>Rules. . .</h4>
+       <p>1. Before Solving Quiz Please Properly Read Rules.</p>
+           <p>2. Write Your Full Name.</p>
+           <p>3. Read Questions Properly Before Choosing Any Option, Because Clicking on the next does not back.</p>
+           <p>4. Each Question Carry 5 Points.</p>
+           <p>5. Total 10 Questions 50 Points.</p>
+       
+           <p id="accept"><a href="index23.html">Accept</a></p>
+         
+
+    </div>
+</div>
+
+    <div class="follow">
+        <h5>FOLLOW US ON SOCIAL</h5>
+        <div class="social-media">
+            <a href="workinprogress.html"><i class="fab fa-facebook"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-twitter"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-instagram"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-youtube"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <br>
+        <br>
+        <hr>
+    </div>
+    
+    
+</body>
+</html>
