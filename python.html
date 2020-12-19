@@ -1,0 +1,148 @@
+<html>
+    <head> 
+    <title>
+     free online python course
+    </title>
+
+<style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+
+}
+
+ul{
+    list-style: none;
+    padding-top: 17px;
+}
+.navmenu{
+    position: absolute;
+    margin-top:10%;
+    padding-top: 13%;
+    transform: translateY(-5%);
+    
+    width: 200px;
+    background-color: white;
+    border:none;
+}
+.navmenu ul {
+    padding-left: 50px;
+    position: relative;
+
+}
+.navmenu ul:after{
+    content: " ";
+    position: absolute;
+    width: 2px;
+    height: calc(100% - 58px);
+    left:40px;
+    top:0;
+    background-color: blue;
+    z-index: -1;
+    margin-top: 28px;
+}
+
+.navmenu ul li{
+    padding:10px 0;
+    padding-left: 20px;
+}
+.navmenu ul li a{
+    text-decoration: none;
+    color: blue;
+    position: relative;
+    font-size: 18px;
+    line-height: 10px;
+    font-weight: 300;
+}
+
+ .navmenu ul li a:before{
+    content: " ";
+    position: absolute;
+    background-color: white;
+    height: 12px;
+    width: 12px;
+    left:-37px;
+    top:50%;
+    transform:translateY(-50%);
+    border-radius:50px;
+    border:2px solid blue;
+
+}
+
+.navmenu ul li a.active{
+    font-weight: 500;
+}
+.navmenu ul li a.active:before{
+    background-color: blue;
+}
+
+
+
+
+</style>
+
+
+
+
+</head>
+    <body>
+        
+        
+       <nav class="navmenu">
+        <p> <strong>TUTORIAL</strong></p>
+
+
+           <ul>
+               <li><a href="#" class="active" target="image"><strong>PYTHON<strong></a></li>
+               <li><a href="intro.html" target="image">Introduction</a></li>
+
+               <li><a href="syntax.html" target="image">Syntax</a></li>
+               <li><a href="comment.html" target="image">Comments</a></li>
+               <li><a href="variables.html" target="image">Variables</a></li>
+               <li><a href="data-type.html" target="image">Data Types</a></li>
+               <li><a href="under-process.html" target="image">Numbers</a></li>
+               <li><a href="under-process.html" target="image">Casting</a></li>
+               <li><a href="under-process.html" target="image">Strings</a></li>
+               <li><a href="under-process.html" target="image">Booleans</a></li>
+               <li><a href="under-process.html" target="image">Operators</a></li>
+               <li><a href="under-process.html" target="image">Lists</a></li>
+               <li><a href="under-process.html" target="image">Tuples</a></li>
+               <li><a href="under-process.html" target="image">Sets</a></li>
+               <li><a href="under-process.html" target="image">Dictionaries</a></li>
+               <li><a href="under-process.html" target="image">If..Else</a></li>
+               <li><a href="under-process.html" target="image">While Loop</a></li>
+               <li><a href="under-process.html" target="image">For Loop</a></li>
+               <li><a href="under-process.html" target="image">Functions</a></li>
+               <li><a href="under-process.html" target="image">Labda</a></li>
+               <li><a href="under-process.html" target="image">Arrays</a></li>
+               <li><a href="under-process.html" target="image">Classes/Objects</a></li>
+               <li><a href="under-process.html" target="image">Inheritance</a></li>
+               <li><a href="under-process.html" target="image">Iterators</a></li>
+               <li><a href="under-process.html" target="image">Scope</a></li>
+               <li><a href="under-process.html" target="image">Dates</a></li>
+               <li><a href="under-process.html" target="image">Math</a></li>
+               <li><a href="under-process.html" target="image">User Input</a></li>
+               <li><a href="under-process.html" target="image">String Formattingx</a></li>
+               
+
+           </ul>
+       </nav>
+
+<script>
+    const allItems=document.querySelectorAll(".navmenu ul li a");
+    allItems.forEach(item=>{
+        item.addEventListener("click",function(e){
+            for(var i=1; i < allItems.length; i++){
+                allItems[i].classList.remove("active");
+            }
+            this.classList.add('active');
+
+        });
+    });
+</script>
+
+    </body>
+</html>
