@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+    <title> All-Courses</title>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+        }
+
+nav
+{
+ background-color:  #4d79ff;
+ height: 80px;
+ width: 80%;
+ position: fixed;
+ box-shadow: 0 5px  6px #efefef;
+ margin-left: 10%;
+}
+
+
+label.logo
+{
+  color:white;
+  font-size: 43px;
+  line-height: 80px;
+  padding: 0 30px;
+  font-weight: 600;
+  font-family: 'Lobster', cursive;
+}
+
+    nav:after{
+        content:'';
+        clear:both;
+        display: table;
+    }
+    nav ul{
+        padding-top: 20px;
+        float: right;
+        list-style: none;
+        margin-right:140px;
+        position: relative;
+    }
+    nav ul li {
+        float: left;
+        background: red ;
+        display: inline-block;
+        margin: 30px 7px;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+        line-height: 40px;
+        font-size: 17px;
+        padding: 8px 15px;
+        
+    }
+    nav ul li a:hover{
+        color:white;
+        background-color: none;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        box-shadow: 0 0 7px white ;
+    }
+    nav ul ul li a:hover{
+        color:red;
+        box-shadow: none;
+        border:none;
+        
+
+    }
+    nav ul li:hover > ul{
+        opacity: 1;
+        visibility: visible;
+
+    }
+    nav ul ul {
+        position: absolute;
+        opacity:0;
+        visibility: hidden;
+        transition: top 0.3s;
+    }
+    nav ul ul li{
+
+        position: relative;
+        margin: 0px;
+        width: 110px;
+        float: none;
+        display: list-item;
+        text-align: center;
+        background-color:rgb(224, 92, 92);
+
+
+
+        
+    }
+    nav ul ul ul  li{
+        position: relative;
+        top: -60px;
+        left:111px;
+        
+        
+    }
+    .ID{
+        
+        border-radius:1px;
+        background-color:  #d9d9d9;
+        border-bottom: 0.5px solid white;
+    }
+
+      
+    .control{
+        width: 80%;
+        margin-left: 10%;
+        height: 800px;
+        background-color:rgb(227, 245, 227);
+    }
+    .control h1{
+        text-align: center;
+        font-family: Sans-Serif;
+       font-weight:normal;
+       font-size: 20px;
+       letter-spacing: 4px;
+       color: black;
+       padding-top: 10%;
+    }
+    .python{
+        width: 95%;
+        margin-left: 2.50%;
+        height: 300px;
+        background-color: white;
+        margin-top: 20px;
+        display: flex;
+        
+    }
+  .py{
+    font-family: Sans-Serif;
+    width: 70%;
+    height: 100%;
+    margin-right: 4px;
+    border:1px solid rgb(14, 13, 13);
+
+  }
+  .py h2{
+      padding: 10px;
+      padding-left: 30px;
+      color: rgb(46, 87, 126);
+      letter-spacing: 3px;
+      border-bottom: 1px solid black;
+  }
+  .pyimage{
+      width:400px;
+      margin-left:3px;
+      height: 300px;
+      float:right;
+      border:1px solid rgb(10, 10, 10);
+
+      
+  }
+
+
+  .follow{
+    width: 80%;
+    margin-left: 10%;
+}
+
+h5{
+    font-family: Sans-Serif;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 4px;
+    padding: 20px 0 40px;
+    color:black;
+    text-align:center;
+    
+    
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+.social-media a{
+    display: flex;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+    align-items:center;
+    justify-content: center;
+    text-decoration: none;
+    
+}
+
+a i{
+    transform: scale(2);
+}
+a .fa-facebook{
+    color:#3b5998;
+}
+
+a .fa-twitter{
+    color:#70c4e6;
+}
+
+a .fa-instagram{
+    color:#f14843;
+}
+
+a .fa-whatsapp{
+    color:#4fce5d;
+}
+
+a .fa-youtube{
+    color:#f00;
+}
+
+a i:hover{
+    transform: scale(1.5);
+}
+    </style>
+</head>
+<body>
+
+    <nav>
+        <label class="logo">EasyCoding</label>
+    
+        <ul>
+            <li><a href="#">Back</a></li>
+            
+              <li><a href="#">Examples</a>
+                  <ul>
+                  <li class="ID"><a href="workinprogress.html">Python</a></li>
+                  <li class="ID"><a href="workinprogress.html">Java</a></li>
+                  <li class="ID"><a href="workinprogress.html">C++</a></li>
+                  <li class="ID"><a href="workinprogress.html">JavaScript</a></li>
+                 </ul>
+              </li>
+
+              <li>
+                
+                <a href="#">Quiz</a>
+              <ul>
+               <li class="ID"><a href="#">Python</a>
+               
+               <ul>
+                   <li class="ID"><a href="workinprogress.html">Beginner</a></li>
+                   <li class="ID"><a href="workinprogress.html">Intermediate</a></li>
+                   <li class="ID"><a href="workinprogress.html">Expert</a></li>
+               </ul></li>
+               
+               <li class="ID"><a href="#">Java</a>
+               
+               <ul>
+                   <li class="ID"><a href="workinprogress.html">Beginner</a></li>
+                   <li class="ID"><a href="workinprogress.html">Intermediate</a></li>
+                   <li class="ID"><a href="workinprogress.html">Expert</a></li>
+               </ul></li>
+               <li class="ID"><a href="#">C++</a>
+               <ul>
+                   <li class="ID"><a href="workinprogress.html">Beginner</a></li>
+                   <li class="ID"><a href="workinprogress.html">Intermediate</a></li>
+                   <li class="ID"><a href="workinprogress.html">Expert</a></li>
+               </ul>
+               </li>
+               <li class="ID"><a href="#">JavaScript</a>
+               <ul>
+                   <li class="ID"><a href="workinprogress.html">Beginner</a></li>
+                   <li class="ID"><a href="workinprogress.html">Intermediate</a></li>
+                   <li class="ID"><a href="workinprogress.html">Expert</a></li>
+               </ul>
+               </li>
+              </ul>
+           </li>
+
+
+
+
+          </ul>
+      </nav>
+
+   <div class="control">
+       <h1>VIEW ALL COURSES</h1>
+    <div class="python">
+      <div class="py">
+          <h2>PYTHON</h2>
+          <p> </p>
+      </div>
+      <div class="pyimage">
+        <img src="python.jpg" class="pyimage">
+
+      </div>
+    </div>
+    
+</div>
+
+    <div class="follow">
+        <h5>FOLLOW US ON SOCIAL</h5>
+        <div class="social-media">
+            <a href="workinprogress.html"><i class="fab fa-facebook"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-twitter"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-instagram"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-youtube"></i></a>
+            <a href="workinprogress.html"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <br>
+    </div>
+    
+</body>
+</html>
